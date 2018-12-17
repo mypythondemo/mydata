@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWin</class>
+ <widget class="QMainWindow" name="mainWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>车辆缴费系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>6</y>
+      <width>1021</width>
+      <height>637</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="MaingridLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_B">
+    <property name="title">
+     <string>业务办理(&amp;B)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_J"/>
+   </widget>
+   <widget class="QMenu" name="menu_C">
+    <property name="title">
+     <string>查询打印(&amp;C)</string>
+    </property>
+    <addaction name="action_C"/>
+    <addaction name="separator"/>
+    <addaction name="action_M"/>
+    <addaction name="separator"/>
+    <addaction name="action_Y"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>数据维护（&amp;S)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_L"/>
+    <addaction name="action_D"/>
+    <addaction name="separator"/>
+    <addaction name="action_Z"/>
+    <addaction name="separator"/>
+    <addaction name="action_F"/>
+    <addaction name="separator"/>
+    <addaction name="action_R"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_X">
+    <property name="title">
+     <string>系统设置（&amp;X)</string>
+    </property>
+    <addaction name="action_B"/>
+    <addaction name="separator"/>
+    <addaction name="action_T"/>
+    <addaction name="separator"/>
+    <addaction name="action_N"/>
+    <addaction name="separator"/>
+    <addaction name="action_H"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_B"/>
+   <addaction name="menu_C"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_X"/>
+  </widget>
+  <widget class="QStatusBar" name="sb"/>
+  <action name="action_J">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/rent-a-car.png</normaloff>ico/rent-a-car.png</iconset>
+   </property>
+   <property name="text">
+    <string>车辆缴费(&amp;J)</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::LowPriority</enum>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/analysis.png</normaloff>ico/analysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>信息查询(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_M">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/业主中心-物业缴费.png</normaloff>ico/业主中心-物业缴费.png</iconset>
+   </property>
+   <property name="text">
+    <string>每日清单(&amp;M)</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/已缴费 copy@1x.png</normaloff>ico/已缴费 copy@1x.png</iconset>
+   </property>
+   <property name="text">
+    <string>月结清单(&amp;Y)</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/usb.png</normaloff>ico/usb.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据库备份(&amp;B)</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/calenda.png</normaloff>ico/calenda.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据库同步(&amp;T)</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/bus.png</normaloff>ico/bus.png</iconset>
+   </property>
+   <property name="text">
+    <string>车辆类别(&amp;L)</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/flag-china.png</normaloff>ico/flag-china.png</iconset>
+   </property>
+   <property name="text">
+    <string>车牌地区(&amp;D)</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/接车开单.png</normaloff>ico/接车开单.png</iconset>
+   </property>
+   <property name="text">
+    <string>站点维护(&amp;Z)</string>
+   </property>
+  </action>
+  <action name="action_F">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/充值缴费.png</normaloff>ico/充值缴费.png</iconset>
+   </property>
+   <property name="text">
+    <string>缴费金额(&amp;F)</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/teacher-male.png</normaloff>ico/teacher-male.png</iconset>
+   </property>
+   <property name="text">
+    <string>人员维护(&amp;R)</string>
+   </property>
+  </action>
+  <action name="action_N">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/精美主题.png</normaloff>ico/精美主题.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据初始化(&amp;M)</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>异地数据库(D)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

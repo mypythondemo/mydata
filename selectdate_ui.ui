@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>selectdate</class>
+ <widget class="QDialog" name="selectdate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>387</width>
+    <height>145</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>390</width>
+    <height>145</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="t1">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>30</y>
+     <width>122</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>182</x>
+     <y>32</y>
+     <width>35</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>至</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="t2">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>30</y>
+     <width>126</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="Qdate">
+   <property name="geometry">
+    <rect>
+     <x>106</x>
+     <y>60</y>
+     <width>237</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt1">
+   <property name="geometry">
+    <rect>
+     <x>74</x>
+     <y>94</y>
+     <width>89</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>确 定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt2">
+   <property name="geometry">
+    <rect>
+     <x>226</x>
+     <y>94</y>
+     <width>89</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取 消</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>62</y>
+     <width>335</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="s1">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>30</y>
+     <width>19</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↓</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="s2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>30</y>
+     <width>19</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↓</string>
+   </property>
+  </widget>
+  <zorder>line</zorder>
+  <zorder>t1</zorder>
+  <zorder>label</zorder>
+  <zorder>t2</zorder>
+  <zorder>bt1</zorder>
+  <zorder>bt2</zorder>
+  <zorder>s1</zorder>
+  <zorder>s2</zorder>
+  <zorder>Qdate</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bt2</sender>
+   <signal>clicked()</signal>
+   <receiver>selectdate</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>361</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
